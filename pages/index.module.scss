@@ -1,3 +1,47 @@
 .base {
   // Nothing yet
 }
+
+.container {
+  // The max width should be the same as Bootstrap's medium breakpoint
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.heading {
+  // Nothing yet
+}
+
+.introParagraph {
+  // Nothing yet
+}
+
+.textarea {
+  margin: 0 auto;
+  width: 720px;
+  height: 200px;
+  max-width: 100%;
+}
+
+.chunkList {
+  display: flex;
+  flex-direction: column;
+}
+
+.chunk {
+  margin: 1rem;
+  background-color: pink;
+  position: relative;
+}
+
+.chunkText {
+  white-space: pre-wrap;
+  height: 200px;
+  overflow: auto;
+}
+
+.copyButton {
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+}
