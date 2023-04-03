@@ -1,19 +1,32 @@
 .base {
-  // Nothing yet
+  font-family: 'Lato', sans-serif;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 }
 
 .container {
-  // The max width should be the same as Bootstrap's medium breakpoint
   max-width: 720px;
   margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .heading {
-  // Nothing yet
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
 }
 
 .introParagraph {
-  // Nothing yet
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #333333;
 }
 
 .textarea {
@@ -21,6 +34,11 @@
   width: 720px;
   height: 200px;
   max-width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 1rem;
+  font-family: 'Lato', sans-serif;
+  resize: vertical;
 }
 
 .chunkList {
@@ -29,19 +47,35 @@
 }
 
 .chunk {
-  margin: 1rem;
-  background-color: pink;
+  margin: 1rem 0;
+  background-color: #deebd3;
   position: relative;
+  border-radius: 6px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .chunkText {
   white-space: pre-wrap;
   height: 200px;
   overflow: auto;
+  color: #333333;
 }
 
 .copyButton {
   position: absolute;
   top: 0.5rem;
-  right: 2rem;
+  right: 3rem;
+  background-color: #3c7708;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #619236;
+  }
 }
