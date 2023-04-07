@@ -9,7 +9,7 @@
 }
 
 .container {
-  max-width: 720px;
+  max-width: min(720px, 100%);
   margin: 0 auto;
   background-color: #ffffff;
   border-radius: 12px;
