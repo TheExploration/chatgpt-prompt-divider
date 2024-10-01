@@ -5,7 +5,7 @@ import styles from './index.module.scss'
 const Home: NextPage = () => {
   const [input, setInput] = useState('')
 
-  const chunks = getChunks(input, 4096)
+  const chunks = getChunks(input, 1500)
 
   const handleCopy = async (text: string) => {
     try {
@@ -21,7 +21,7 @@ const Home: NextPage = () => {
         {/* Heading and description */}
         <h1 className={styles.heading}>ChatGPT Prompt Divider</h1>
         <p className={styles.introParagraph}>
-          ChatGPT prompts are limited to 4096 characters. This tool will divide
+          ChatGPT prompts are limited to 1500 characters. This tool will divide
           your prompts into as many chunks are needed to stay under the
           character limit. It will also modify the prompts so that ChatGPT will
           wait for further input before responding to the split-up prompt.
