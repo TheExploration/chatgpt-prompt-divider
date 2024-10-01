@@ -73,7 +73,7 @@ function getChunks(str: string, chunkSize: number): string[] {
   }
 
   const instructions =
-    '\n\nInstructions for ChatGPT: This prompt has been truncated to fit within the character limit. Simply listen and respond with "Ok" until my last prompt, which will end with the string "(FINISHED)".'
+    ''
 
   const finishedString = '\n\n(FINISHED)'
 
