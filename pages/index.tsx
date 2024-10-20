@@ -10,6 +10,14 @@ const Home: NextPage = () => {
   const handleCopy = async (text: string) => {
     try {
       await navigator.clipboard.writeText(text)
+
+        // Mark the button at the corresponding index as clicked
+      setClickedButtons((prev) => {
+        const updated = [...prev];
+        updated[index] = true;
+        return updated;
+      });
+      
     } catch (err) {
       console.error('Failed to copy text: ', err)
     }
